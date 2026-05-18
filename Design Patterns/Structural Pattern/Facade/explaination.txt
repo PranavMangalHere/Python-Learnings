@@ -1,0 +1,91 @@
+1️⃣ What is Facade Design Pattern?
+Facade Pattern provides a simple interface to a complex system.
+Instead of interacting with multiple classes directly, you interact with one unified class (the facade).
+👉 It hides complexity.
+
+🧠 Real Life Example
+Think about ordering food on an app:
+You just click "Order Now".
+Behind the scenes:
+Restaurant prepares food
+Delivery agent assigned
+Payment processes
+Notification sent
+You don't deal with all those services separately.
+The app acts as a Facade.
+
+Client → Facade → Subsystem A
+                  → Subsystem B
+                  → Subsystem C
+
+💻 3️⃣ Basic Python Example (Home Theater System)
+🎬 Problem (Without Facade)
+You have multiple classes:
+Projector
+SoundSystem
+Lights
+StreamingService
+User must call everything manually.
+
+🔎 5️⃣ When to Use Facade?
+Use Facade when:
+✔ System has many classes
+✔ Client should not know internal complexity
+✔ You want cleaner API
+✔ Reduce coupling between client and subsystem
+-Use the Facade pattern when you need to have a limited but straightforward interface to a complex subsystem.
+-Use the Facade when you want to structure a subsystem into layers.
+
+ How to Implement
+1.Check whether it’s possible to provide a simpler interface than what an existing subsystem already provides.
+You’re on the right track if this interface makes the client code independent from many of the subsystem’s classes.
+
+2.Declare and implement this interface in a new facade class. The facade should redirect the calls from the client
+code to appropriate objects of the subsystem. The facade should be responsible for initializing the subsystem and
+managing its further life cycle unless the client code already does this.
+
+3.To get the full benefit from the pattern, make all the client code communicate with the subsystem only via the facade.
+Now the client code is protected from any changes in the subsystem code. For example,
+when a subsystem gets upgraded to a new version, you will only need to modify the code in the facade.
+
+4.If the facade becomes too big, consider extracting part of its behavior to a new, refined facade class.
+
+⚖ 6️⃣ Advantages
+✅ Simplifies complex systems
+✅ Reduces client dependency
+✅ Improves readability
+✅ Improves maintainability
+✅ Good for layered architecture
+
+❌ 7️⃣ Disadvantages
+❌ Can become God Object
+❌ May hide useful subsystem functionality
+❌ Extra abstraction layer
+❌ If overused → rigid system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🧩 14️⃣ UML Conceptual Diagram
+Facade
+Client → Facade
+Facade → SubsystemA
+Facade → SubsystemB
+Adapter
+Client → TargetInterface
+Adapter implements TargetInterface
+Adapter uses Adaptee

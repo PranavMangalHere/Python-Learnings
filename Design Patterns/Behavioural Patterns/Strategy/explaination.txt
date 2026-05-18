@@ -1,0 +1,28 @@
+🔷 1. What is Strategy Pattern?
+Strategy Pattern lets you define a family of algorithms, put each of them in a separate class,
+and make them interchangeable at runtime.
+
+🔥 2. Problem It Solves (VERY IMPORTANT)
+❌ Without Strategy Pattern
+Imagine you're building a payment system:
+class PaymentProcessor:
+    def pay(self, amount, method):
+        if method == "credit":
+            print("Paid using Credit Card")
+        elif method == "paypal":
+            print("Paid using PayPal")
+        elif method == "upi":
+            print("Paid using UPI")
+🚨 Problems:
+1. ❌ Violates Open/Closed Principle
+Adding new method → modify existing class
+Risk of breaking working code
+2. ❌ Too many if-else
+Hard to maintain
+Hard to test
+3. ❌ No flexibility
+Can't change behavior at runtime cleanly
+4. ❌ Not scalable
+10 payment methods → 10 conditions
+
+

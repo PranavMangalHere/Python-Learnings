@@ -1,0 +1,17 @@
+28108: 2026-02-11 12:00:41,647 - root - ERROR - invalid literal for int() with base 10: 'Hello'
+Traceback (most recent call last):
+  File "C:\Users\PranavMangal\Desktop\Python my work deep dive\Logging\Ex2.py", line 10, in <module>
+    age = int(input("Enter your age: "))
+ValueError: invalid literal for int() with base 10: 'Hello'
+19040: 2026-02-11 12:01:21,667 - root - INFO - Your age is: 12
+1184: 2026-02-11 12:03:18,239 - root - ERROR - Access Denied
+Traceback (most recent call last):
+  File "C:\Users\PranavMangal\Desktop\Python my work deep dive\Logging\Ex2.py", line 21, in <module>
+    raise AccessDenied("Access Denied")
+AccessDenied: Access Denied
+5408: 2026-02-11 12:03:26,721 - root - INFO - You are 19 years old
+13780: 2026-02-11 12:03:35,298 - root - ERROR - invalid literal for int() with base 10: 'dfs'
+Traceback (most recent call last):
+  File "C:\Users\PranavMangal\Desktop\Python my work deep dive\Logging\Ex2.py", line 19, in <module>
+    age = int(input("Enter your age: "))
+ValueError: invalid literal for int() with base 10: 'dfs'

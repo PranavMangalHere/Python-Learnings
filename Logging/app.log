@@ -1,0 +1,17 @@
+2026-02-11 11:18:20,500 INFO Dividing by 1 and 2
+2026-02-11 11:18:20,500 INFO Dividing by 1 and 0
+2026-02-11 11:18:20,500 ERROR Division failed
+Traceback (most recent call last):
+  File "C:\Users\PranavMangal\Desktop\Python my work deep dive\Logging\Ex1.py", line 10, in divide
+    return a / b
+           ~~^~~
+ZeroDivisionError: division by zero
+2026-02-11 11:20:10,195 INFO Dividing by 1 and 2
+2026-02-11 11:20:10,195 INFO 0.5
+2026-02-11 11:20:10,195 INFO Dividing by 1 and 0
+2026-02-11 11:20:10,195 ERROR Division failed
+Traceback (most recent call last):
+  File "C:\Users\PranavMangal\Desktop\Python my work deep dive\Logging\Ex1.py", line 10, in divide
+    logging.info(a/b)
+                 ~^~
+ZeroDivisionError: division by zero

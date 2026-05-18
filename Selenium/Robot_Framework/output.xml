@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-29T17:12:30.178370" rpa="false" schemaversion="5">
+<suite id="s1" name="closeAll" source="C:\Users\PranavMangal\Desktop\Python my work deep dive\Selenium\Robot_Framework\TestCases\closeAll.robot">
+<test id="s1-t1" name="Registration Test" line="5">
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2026-04-29T17:12:30.430488" level="INFO">${speed} = 0 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-04-29T17:12:30.430031" elapsed="0.000545"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-29T17:12:30.431375" elapsed="0.000842"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-29T17:12:30.433412" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<arg>https://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-29T17:12:30.433077" elapsed="6.132727"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-29T17:12:36.568038" elapsed="0.051634"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-29T17:12:36.626675" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>https://demo.nopcommerce.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-29T17:12:36.626161" elapsed="4.137929"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-29T17:12:42.766733" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-29T17:12:40.765243" elapsed="2.001799"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-29T17:12:42.767988" elapsed="4.613457"/>
+</kw>
+<status status="PASS" start="2026-04-29T17:12:30.428038" elapsed="16.955558"/>
+</test>
+<status status="PASS" start="2026-04-29T17:12:30.181622" elapsed="17.206422"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="closeAll" id="s1" pass="1" fail="0" skip="0">closeAll</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,65 @@
+------- DECORATOR ---------
+
+The Decorator Design Pattern is a structural design pattern used to add new functionality to an object
+dynamically without changing its original code.
+
+Decorator Pattern = Wrap an object to add extra functionality at runtime.
+
+Real Life Example
+
+Coffee Shop ☕
+Base Coffee → ₹50
+Add Milk → +₹10
+Add Sugar → +₹5
+Final coffee = Coffee + Milk + Sugar
+We wrap the coffee object with decorators.
+
+3️⃣ Structure of Decorator Pattern
+
+Main Components:
+1️⃣ Component → Base interface
+2️⃣ Concrete Component → Original object
+3️⃣ Decorator → Base decorator class
+4️⃣ Concrete Decorators → Add new functionality
+
+Component
+   ↑
+ConcreteComponent
+   ↑
+Decorator
+   ↑
+ConcreteDecorator
+
+
+8️⃣ When To Use Decorator Pattern
+Use it when:
+✔ You want to add functionality without modifying existing code
+✔ You want multiple combinations of features
+✔ You want runtime flexibility
+
+
+
+9️⃣ Real Examples in Software
+Common real-world usage:
+Logging decorator
+Authentication decorator
+Retry decorator
+Caching decorator
+
+
+
+
+
+
+
+
+
+
+
+
+6️⃣ Decorator Pattern vs Inheritance
+| Inheritance                    | Decorator                 |
+| ------------------------------ | ------------------------- |
+| Behavior fixed at compile time | Behavior added at runtime |
+| Many subclasses needed         | Flexible                  |
+| Tight coupling                 | Loose coupling            |

@@ -1,0 +1,70 @@
+1️⃣ What Is Adapter Pattern?
+Adapter allows two incompatible interfaces to work together.
+It converts one interface into another that the client expects.
+
+--> Think of travel adapter
+Your charger expects Indian plug
+US wall socket is different
+Adapter converts it
+Same thing happens in software.
+
+2️⃣ When Should You Use Adapter?
+Use Adapter when:
+-You want to use an existing class
+-But its interface does not match your system
+-You cannot modify that class
+-You want to follow Open/Closed Principle(open to extention close to modification)
+
+""" ------Very important------ """
+3️⃣ Core Structure of Adapter
+Adapter has 4 roles:
+
+Role	Meaning
+Client	Uses functionality
+Target	Expected interface
+Adaptee	Existing incompatible class
+Adapter	Converts interface
+
+
+""" Example problem scenario that we will solve """
+Scenario - you have a ride booking app
+
+your system expects - book_ride(pickup, drop)
+
+But a pre-built software library created provides - create_trip(start, end)
+
+class ThirdPartyTaxiSDK:
+    def create_trip(self, start, end):
+        print(f"Trip from {start} to {end}")
+
+taxi = ThirdPartyTaxiSDK()
+taxi.book_ride("Airport", "Hotel")  # it will give us ERROR
+
+🔥 Difference Between Object & Class Adapter
+| Feature                 | Object Adapter | Class Adapter |
+| ----------------------- | -------------- | ------------- |
+| Uses                    | Composition    | Inheritance   |
+| Flexible                | ✅ Yes          | ❌ Less      |
+| Adapts multiple classes | ✅ Yes          | ❌ No        |
+| Recommended in Python   | ✅ Yes          | ⚠ Rare       |
+
+
+📌 How To Identify Adapter Pattern Problem in Real Life
+Ask yourself:
+Am I integrating third-party library?
+Do method names mismatch?
+Does data format mismatch? (XML vs JSON)
+Can I not modify existing class?
+If YES → Adapter is your solution.
+
+📌 Real-World Use Cases
+Payment gateway integration
+
+SOAP → REST conversion
+Old API → New API
+Legacy system integration
+External SDK integration
+Database driver adaptation
+
+
+What is the disadvantage of using adaptor pattern ?
