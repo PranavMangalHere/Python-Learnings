@@ -72,3 +72,45 @@ res = reduce(lambda a,b:max(a,b) , lst)
 print(res)
 print("------------------------------------")
 
+
+# 3. Create Cartesian Product
+a = [1,2,3]
+b = ['x','y']
+res = [(num, num2) for num in a for num2 in b]
+print(res)
+print("------------------------------------")
+
+
+# 6. Multiple Conditions
+# Return words:
+# length > 3
+# starts with vowel
+words = ["apple", "dog", "orange", "cat", "elephant", "dfgh"]
+res = [i for i in words if len(i) > 3 and i.strip()[0] in "aeiou"]
+print(res)
+print("------------------------------------")
+
+# 9. Split Sentences Into Words
+sentences = [
+    "python is awesome",
+    "list comprehension rocks",
+    " guygy huguy ", 
+    " "
+]
+res = [word for words in sentences for word in words.strip().split(" ") if len(word) > 0]
+print(res)
+print("------------------------------------")
+
+# 10. Find Palindromes
+words = ["madam", "apple", "racecar", "python"]
+res = [word for word in words if word == word[::-1]]
+print(res)
+print("------------------------------------")
+
+
+# 12. Build Dictionary From Two Lists
+keys = ["id", "name", "age"]
+values = [101, "Pranav", 22]
+res = {k:v for k, v in zip(keys, values)}
+print(res)
+
