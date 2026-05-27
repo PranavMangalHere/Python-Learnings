@@ -17,8 +17,7 @@ class SUV(Car):
 
 
 class CarFactory:
-    @staticmethod
-    def create_car( car_type: str) -> Car:
+    def create_car(self, car_type: str) -> Car:
         if car_type == "sedan":
             return Sedan()
         elif car_type == "suv":
