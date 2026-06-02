@@ -114,3 +114,50 @@ values = [101, "Pranav", 22]
 res = {k:v for k, v in zip(keys, values)}
 print(res)
 
+
+# arr = [1,2,[1,2],(3,4), "qwer"]
+# result = [i 
+# for lst in arr
+# for i in ( lst if isinstance(lst, (list, tuple)) else ( list(lst) if isinstance(lst, str) else [lst] ) )
+# ]
+# print(result)
+# colors = ["red", "blue"]
+# sizes = ["S", "M", "L"]
+
+# result = [ (c, s)
+#     for c in colors
+#     for s in sizes
+#     ]
+# print(result)
+
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6]
+# ]
+# rows = len(matrix)
+# cols = len(matrix[0])
+
+# result =[
+#     [matrix[row][col] for row in range(rows)]
+#     for col in range(cols)
+#     ]
+# print(result)
+
+# sentence = "python is powerful and python is fun"
+
+# seen = set()
+# result=[len(word) for word in sentence.split() if len(word) not in seen and not seen.add(len(word))]
+# print(result)
+
+
+# nums = 100
+# result=[num for num in range(2,nums) if all(num%i != 0 for i in range(2,int(num**0.5)+1))]
+# print(result)
+
+
+# text = "apple banana apple mango banana apple"
+# result = {
+#     word : sum(1 for x in text.split(" ") if word == x )
+#     for word in text.split(" ")
+# }
+# print(result)
